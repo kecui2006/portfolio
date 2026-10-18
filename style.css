@@ -1,6 +1,9 @@
 html {
-    --color-accent: royalblue;
-    --color-border: oklch(80% 3% 200);
+    --color-accent: light-dark(royalblue, oklch(78% 0.12 265));
+    --color-border: oklch(50% 10% 200 / 40%);
+    color-scheme: light dark;
+    background-color: Canvas;
+    color: CanvasText;
     accent-color: var(--color-accent);
 }
 
@@ -10,10 +13,11 @@ html {
 
 body {
     font: 100%/1.5 system-ui, sans-serif;
-    color: #233047;
+    color: CanvasText;
+    background-color: Canvas;
     max-width: 100ch;
     margin-inline: auto;
-    padding: 1rem;
+    padding: 4rem 1rem 1rem;
 }
 
 /* Equal-width navigation links, with a stable height on hover. */
@@ -40,7 +44,7 @@ nav a.current {
 
 nav a:hover,
 nav a:focus-visible {
-    background-color: oklch(from var(--color-accent) 95% 0.025 h);
+    background-color: color-mix(in oklch, var(--color-accent), Canvas 85%);
     border-bottom: 0.4em solid var(--color-accent);
     padding-bottom: 0.1em;
 }
@@ -61,7 +65,7 @@ img {
     height: auto;
 }
 
-input, textarea, button {
+input, textarea, button, select {
     font: inherit;
 }
 
@@ -85,7 +89,7 @@ input, textarea {
     padding: 0.65em;
     border: 1px solid var(--color-border);
     border-radius: 0.3rem;
-    background: white;
+    background: Canvas;
     color: inherit;
 }
 
@@ -104,7 +108,7 @@ form button {
     padding: 0.7em 1em;
     border: 0;
     border-radius: 0.3rem;
-    background: var(--color-accent);
+    background: royalblue;
     color: white;
     cursor: pointer;
 }
@@ -133,7 +137,7 @@ form button {
     aspect-ratio: 3 / 2;
     object-fit: cover;
     border-radius: 0.35rem;
-    background: #f2f5fa;
+    background: color-mix(in oklch, CanvasText 6%, Canvas);
 }
 
 .projects p {
@@ -183,4 +187,28 @@ form button {
     .projects {
         grid-template-columns: 1fr;
     }
+}
+
+/* Keep the theme control above the navigation, including on small screens. */
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 80%;
+}
+
+.color-scheme select {
+    padding: 0.35em 0.5em;
+    border: 1px solid var(--color-border);
+    border-radius: 0.3rem;
+    background: Canvas;
+    color: CanvasText;
+}
+
+.color-scheme select:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
 }
