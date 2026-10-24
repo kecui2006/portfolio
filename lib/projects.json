@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Lab 3: JavaScript Navigation and Themes",
+    "year": 2026,
+    "image": "images/project-placeholder.svg",
+    "description": "A shared JavaScript module builds the navigation, highlights the current page, and remembers the selected color scheme."
+  },
+  {
+    "title": "Lab 2: Styling My Portfolio",
+    "year": 2026,
+    "image": "images/project-placeholder.svg",
+    "description": "Responsive CSS layouts, a project grid, and styled contact and resume pages for my personal website."
+  },
+  {
+    "title": "Lab 1: Building My Personal Website",
+    "year": 2026,
+    "image": "images/project-placeholder.svg",
+    "description": "The HTML foundation of my portfolio, including a homepage, projects, contact information, and resume."
+  },
+  {
+    "title": "Exploratory Data Analysis \u2014 Placeholder",
+    "year": 2025,
+    "image": "images/project-placeholder.svg",
+    "description": "Placeholder for a future write-up about exploring a dataset with Python and identifying patterns."
+  },
+  {
+    "title": "Data Cleaning \u2014 Placeholder",
+    "year": 2025,
+    "image": "images/project-placeholder.svg",
+    "description": "Placeholder for a project on missing values, inconsistent formats, and reproducible data preparation."
+  },
+  {
+    "title": "SQL Analysis \u2014 Placeholder",
+    "year": 2025,
+    "image": "images/project-placeholder.svg",
+    "description": "Placeholder for a database project using joins, aggregations, and queries to answer data questions."
+  },
+  {
+    "title": "Statistical Inference \u2014 Placeholder",
+    "year": 2025,
+    "image": "images/project-placeholder.svg",
+    "description": "Placeholder for an analysis using sampling, confidence intervals, and hypothesis testing."
+  },
+  {
+    "title": "Predictive Modeling \u2014 Placeholder",
+    "year": 2025,
+    "image": "images/project-placeholder.svg",
+    "description": "Placeholder for comparing baseline models and evaluating predictions on held-out data."
+  },
+  {
+    "title": "Data Visualization \u2014 Placeholder",
+    "year": 2024,
+    "image": "images/project-placeholder.svg",
+    "description": "Placeholder for an exploratory visualization with clear encodings, labels, and annotations."
+  },
+  {
+    "title": "Geospatial Analysis \u2014 Placeholder",
+    "year": 2024,
+    "image": "images/project-placeholder.svg",
+    "description": "Placeholder for a map-based investigation of spatial patterns in public data."
+  },
+  {
+    "title": "Time Series \u2014 Placeholder",
+    "year": 2024,
+    "image": "images/project-placeholder.svg",
+    "description": "Placeholder for exploring trends, seasonality, and changes over time."
+  },
+  {
+    "title": "Interactive Dashboard \u2014 Placeholder",
+    "year": 2024,
+    "image": "images/project-placeholder.svg",
+    "description": "Placeholder for an interactive dashboard that helps readers investigate a dataset."
+  }
+]

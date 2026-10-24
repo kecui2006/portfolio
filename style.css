@@ -212,3 +212,25 @@ form button {
     outline: 2px solid var(--color-accent);
     outline-offset: 3px;
 }
+
+
+/* Lab 4: reusable project cards and live profile statistics. */
+body > section { margin-block: 2.5rem; }
+.profile-image { width: 15rem; border-radius: 0.5rem; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.section-heading h2 { margin-block: 0.5em; }
+a { color: var(--color-accent); }
+.section-note { margin-top: 0; }
+#refresh-stats { padding: 0.4em 0.8em; border: 1px solid var(--color-border); border-radius: 0.3rem; background: Canvas; color: CanvasText; cursor: pointer; }
+#refresh-stats:disabled { opacity: 0.6; cursor: wait; }
+#profile-stats { padding: 1rem; border: 1px solid var(--color-border); border-radius: 0.5rem; }
+#profile-stats dl { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.5rem; margin: 0; text-align: center; }
+#profile-stats dt { grid-row: 1; font-size: 0.85em; }
+#profile-stats dd { grid-row: 2; margin: 0; font-size: 1.8rem; font-weight: 700; color: var(--color-accent); }
+.projects h3 { margin: 0; }
+.project-year { display: block; margin-top: 0.5rem; color: var(--color-accent); font-size: 0.9em; }
+@media (max-width: 35em) {
+    #profile-stats { padding: 0.75rem 0.3rem; }
+    #profile-stats dt { font-size: 0.7em; }
+    #profile-stats dd { font-size: 1.4rem; }
+}

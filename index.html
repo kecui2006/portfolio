@@ -6,6 +6,7 @@
     <title>Kevin Cui: Personal site and portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="global.js"></script>
+    <script type="module" src="index.js"></script>
 </head>
 <body>
     <h1>Kevin Cui</h1>
@@ -15,6 +16,23 @@
         Welcome to my personal website and portfolio.
     </p>
 
-    <img src="images/pikachu.jpeg" alt="Pikachu">
+    <img class="profile-image" src="images/pikachu.jpeg" alt="Pikachu">
+
+    <section aria-labelledby="github-heading">
+        <div class="section-heading">
+            <h2 id="github-heading">My GitHub Stats</h2>
+            <button id="refresh-stats" type="button">Refresh stats</button>
+        </div>
+        <p class="section-note">Live public data from <a href="https://github.com/kecui2006">@kecui2006</a>.</p>
+        <div id="profile-stats" aria-live="polite" aria-busy="true">Loading GitHub stats…</div>
+    </section>
+
+    <section aria-labelledby="latest-heading">
+        <div class="section-heading">
+            <h2 id="latest-heading">Latest Projects</h2>
+            <a href="projects/">View all projects →</a>
+        </div>
+        <div class="projects" aria-live="polite" aria-busy="true">Loading projects…</div>
+    </section>
 </body>
 </html>
