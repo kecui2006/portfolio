@@ -122,7 +122,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     containerElement.replaceChildren();
     if (projects.length === 0) {
         const message = document.createElement('p');
-        message.textContent = 'No projects to display yet.';
+        message.textContent = 'No projects match the current filters.';
         containerElement.append(message);
         return;
     }
@@ -142,13 +142,16 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
         }, { once: true });
         const description = document.createElement('p');
         description.textContent = project.description || 'Description coming soon.';
+        const details = document.createElement('div');
+        details.className = 'project-details';
+        details.append(description);
         if (project.year != null) {
             const year = document.createElement('span');
             year.className = 'project-year';
-            year.textContent = ` · ${project.year}`;
-            description.append(year);
+            year.textContent = project.year;
+            details.append(year);
         }
-        article.append(heading, image, description);
+        article.append(heading, image, details);
         containerElement.append(article);
     }
 }

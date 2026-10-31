@@ -11,6 +11,21 @@
 <body>
     <h1 class="projects-title">Projects</h1>
     <p>Coursework and ideas for future projects. Entries marked “Placeholder” are sample data to be replaced with completed work.</p>
+    <section aria-labelledby="chart-heading" class="project-overview">
+        <h2 id="chart-heading">Projects by year</h2>
+        <p id="chart-help">Click a slice or a year to filter projects. Click again to clear. Search and year filters work together.</p>
+        <div class="chart-container">
+            <svg id="projects-pie-plot" viewBox="-50 -50 100 100" role="group" aria-labelledby="chart-heading" aria-describedby="chart-help"></svg>
+            <ul class="legend" aria-label="Filter projects by year"></ul>
+        </div>
+        <p class="chart-empty" hidden>No projects match your search.</p>
+    </section>
+    <label for="project-search">Search projects</label>
+    <input id="project-search" class="searchBar" type="search" placeholder="Search titles, descriptions, or years…" aria-label="Search projects">
+    <div class="filter-summary">
+        <p id="filter-status" role="status"></p>
+        <button id="clear-filters" type="button" hidden>Clear filters</button>
+    </div>
     <div class="projects" aria-live="polite" aria-busy="true">Loading projects…</div>
 </body>
 </html>
