@@ -1,0 +1,11 @@
+{
+  "name": "kevin-cui-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "analyze": "elocuent -d . -o meta/loc.csv --spaces 4"
+  },
+  "devDependencies": {
+    "elocuent": "^0.0.4"
+  }
+}

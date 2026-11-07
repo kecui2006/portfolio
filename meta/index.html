@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta · Kevin Cui</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="meta.css">
+    <script type="module" src="../global.js"></script>
+    <script type="module" src="main.js"></script>
+</head>
+<body class="meta-page">
+    <main>
+        <header>
+            <p class="eyebrow">CODE, IN CONTEXT · LAB 06</p>
+            <h1>Behind the portfolio</h1>
+            <p class="meta-intro">An interactive look at the code and commits that built this website.</p>
+        </header>
+        <section aria-label="Code summary" id="stats" aria-busy="true"></section>
+        <section class="commit-section" aria-labelledby="chart-heading">
+            <div class="chart-heading-row">
+                <h2 id="chart-heading">Commits by time of day</h2>
+                <button id="clear-selection" type="button" disabled>Clear selection</button>
+            </div>
+            <p id="chart-instructions">Hover over a dot for details. Drag across the plot to select commits and compare their languages.</p>
+            <div id="chart" aria-busy="true"></div>
+            <div class="chart-key"><span class="dot-key" aria-hidden="true"></span><span>One dot = one commit · Circle area = attributed lines · Pink = selected</span></div>
+        </section>
+        <section class="selection-panel" aria-labelledby="selection-heading">
+            <h2 id="selection-heading">Explore your selection</h2>
+            <p id="selection-count" role="status">No commits selected</p>
+            <p id="language-help">Select commits to see their language breakdown.</p>
+            <dl id="language-breakdown" aria-label="Selected language breakdown"></dl>
+        </section>
+        <p class="data-note">Source: Git line attribution generated with elocuent. Counts describe lines currently present in the analyzed source files, including blank lines—not every historical edit. Only commits still represented in those files appear. Times are shown in America/Los_Angeles.</p>
+        <p id="load-error" role="alert" hidden></p>
+    </main>
+    <dl id="commit-tooltip" class="info tooltip" aria-label="Commit details" hidden>
+        <dt>Commit</dt><dd><a id="commit-link" target="_blank" rel="noopener noreferrer"></a></dd>
+        <dt>Date</dt><dd id="commit-date"></dd>
+        <dt>Time</dt><dd id="commit-time"></dd>
+        <dt>Author</dt><dd id="commit-author"></dd>
+        <dt>Lines</dt><dd id="commit-lines"></dd>
+    </dl>
+</body>
+</html>
