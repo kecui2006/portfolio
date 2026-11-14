@@ -1,5 +1,12 @@
 [
   {
+    "title": "Bikewatching — Boston & Cambridge",
+    "year": 2026,
+    "image": "images/bikewatching.png",
+    "description": "An interactive Mapbox and D3 map of 261,687 Bluebikes rides in March 2024. Explore station traffic, bike lanes, arrival and departure patterns, and time-of-day filters.",
+    "url": "https://kecui2006.github.io/bikewatching/"
+  },
+  {
     "title": "Lab 3: JavaScript Navigation and Themes",
     "year": 2026,
     "image": "images/project-placeholder.svg",
@@ -18,55 +25,55 @@
     "description": "The HTML foundation of my portfolio, including a homepage, projects, contact information, and resume."
   },
   {
-    "title": "Exploratory Data Analysis \u2014 Placeholder",
+    "title": "Exploratory Data Analysis — Placeholder",
     "year": 2025,
     "image": "images/project-placeholder.svg",
     "description": "Placeholder for a future write-up about exploring a dataset with Python and identifying patterns."
   },
   {
-    "title": "Data Cleaning \u2014 Placeholder",
+    "title": "Data Cleaning — Placeholder",
     "year": 2025,
     "image": "images/project-placeholder.svg",
     "description": "Placeholder for a project on missing values, inconsistent formats, and reproducible data preparation."
   },
   {
-    "title": "SQL Analysis \u2014 Placeholder",
+    "title": "SQL Analysis — Placeholder",
     "year": 2025,
     "image": "images/project-placeholder.svg",
     "description": "Placeholder for a database project using joins, aggregations, and queries to answer data questions."
   },
   {
-    "title": "Statistical Inference \u2014 Placeholder",
+    "title": "Statistical Inference — Placeholder",
     "year": 2025,
     "image": "images/project-placeholder.svg",
     "description": "Placeholder for an analysis using sampling, confidence intervals, and hypothesis testing."
   },
   {
-    "title": "Predictive Modeling \u2014 Placeholder",
+    "title": "Predictive Modeling — Placeholder",
     "year": 2025,
     "image": "images/project-placeholder.svg",
     "description": "Placeholder for comparing baseline models and evaluating predictions on held-out data."
   },
   {
-    "title": "Data Visualization \u2014 Placeholder",
+    "title": "Data Visualization — Placeholder",
     "year": 2024,
     "image": "images/project-placeholder.svg",
     "description": "Placeholder for an exploratory visualization with clear encodings, labels, and annotations."
   },
   {
-    "title": "Geospatial Analysis \u2014 Placeholder",
+    "title": "Geospatial Analysis — Placeholder",
     "year": 2024,
     "image": "images/project-placeholder.svg",
     "description": "Placeholder for a map-based investigation of spatial patterns in public data."
   },
   {
-    "title": "Time Series \u2014 Placeholder",
+    "title": "Time Series — Placeholder",
     "year": 2024,
     "image": "images/project-placeholder.svg",
     "description": "Placeholder for exploring trends, seasonality, and changes over time."
   },
   {
-    "title": "Interactive Dashboard \u2014 Placeholder",
+    "title": "Interactive Dashboard — Placeholder",
     "year": 2024,
     "image": "images/project-placeholder.svg",
     "description": "Placeholder for an interactive dashboard that helps readers investigate a dataset."
